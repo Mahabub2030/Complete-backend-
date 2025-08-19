@@ -99,7 +99,6 @@ const createTour = async (payload: ITour) => {
 
 const getAllTours = async (query: Record<string, string>) => {
 
-
     const queryBuilder = new QueryBuilder(Tour.find(), query)
 
     const tours = await queryBuilder
@@ -108,7 +107,6 @@ const getAllTours = async (query: Record<string, string>) => {
         .sort()
         .fields()
         .paginate()
-
     // const meta = await queryBuilder.getMeta()
 
     const [data, meta] = await Promise.all([
