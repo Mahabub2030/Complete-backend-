@@ -1,5 +1,5 @@
 # Complete-backend-
-# PH Tour Management System - Backend
+# Backend Management System 
 
 This repository contains the backend code for the **PH Tour Management System**.  
 It is built using **Node.js** (or your backend tech stack) and provides APIs for managing tours, bookings, and users.
