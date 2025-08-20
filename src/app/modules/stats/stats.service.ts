@@ -304,7 +304,6 @@ const getPaymentStats = async () => {
             }
         }
     ])
-
     const avgPaymentAmountPromise = Payment.aggregate([
         //stage 1 group stage
         {
@@ -324,9 +323,6 @@ const getPaymentStats = async () => {
             }
         }
     ])
-
-
-
     const [totalPayment, totalPaymentByStatus, totalRevenue, avgPaymentAmount, paymentGatewayData] = await Promise.all([
         totalPaymentPromise,
         totalPaymentByStatusPromise,
