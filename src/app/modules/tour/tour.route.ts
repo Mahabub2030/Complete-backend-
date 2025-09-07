@@ -7,9 +7,8 @@ import { TourController } from "./tour.controller";
 import {
     createTourTypeZodSchema,
     createTourZodSchema,
-    updateTourZodSchema,
+    updateTourZodSchema
 } from "./tour.validation";
-
 const router = express.Router();
 
 /* ------------------ TOUR TYPE ROUTES -------------------- */
